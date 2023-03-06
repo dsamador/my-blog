@@ -7,8 +7,14 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Provider>
-      
+    <Provider >
+      <Router>
+        {/* Error Display */}
+        <Route path="*" element={<Error404/>}/>
+
+        {/* Home Display */}
+        <Route path="/" element={<Home/>}/>
+      </Router>
     </Provider>
   );
 }
