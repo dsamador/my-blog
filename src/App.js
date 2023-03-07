@@ -9,11 +9,13 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        {/* Error Display */}
-        <Route path="*" element={<Error404/>}/>
+        <Routes>
+          {/* Error Display */}
+          <Route path="*" element={<Error404/>}/>
 
-        {/* Home Display */}
-        <Route path="/" element={<Home/>}/>
+          {/* Home Display */}
+          <Route path="/" element={<Home/>}/>
+        </Routes>
       </Router>
     </Provider>
   );
