@@ -22,8 +22,8 @@ function BlogList({
                         
                         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
                             {
-                                blog_list.map(post=>(
-                                    <BlogCard data={post}/>
+                                blog_list.map((post, id)=>(
+                                    <BlogCard data={post} key={id}/>
                                 ))
                             }                            
                         </div>
